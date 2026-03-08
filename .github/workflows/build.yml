@@ -14,7 +14,7 @@ on:
       app_repo:
         description: 'SeedSigner app repository URL'
         required: false
-        default: 'https://github.com/3rdIteration/seedsigner'
+        default: 'https://github.com/probeerka/seedsigner'
       app_branch:
         description: 'SeedSigner app branch'
         required: false
@@ -32,14 +32,7 @@ jobs:
         include:
           - config: pi0-smartcard-dev
             board_flag: --pi0
-          - config: pi02w-smartcard-dev
-            board_flag: --pi02w
-          - config: pi2-smartcard-dev
-            board_flag: --pi2
-          - config: pi4-smartcard-dev
-            board_flag: --pi4
-          - config: lafrite-smartcard-dev
-            board_flag: --lafrite
+          
 
     steps:
       - name: Checkout repository
