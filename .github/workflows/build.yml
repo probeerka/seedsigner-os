@@ -5,10 +5,12 @@ on:
     branches:
       - main
       - dev
+      - feature/rabby_wallet_integration
   pull_request:
     branches:
       - main
       - dev
+      - feature/rabby_wallet_integration
   workflow_dispatch:
     inputs:
       app_repo:
@@ -18,7 +20,7 @@ on:
       app_branch:
         description: 'SeedSigner app branch'
         required: false
-        default: 'dev'
+        default: 'feature/rabby_wallet_integration'
 
 jobs:
   build:
